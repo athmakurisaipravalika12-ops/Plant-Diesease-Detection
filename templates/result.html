@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <style>
+        body{
+            font-family: Lucida calligraphy, sans-serif;
+            background: linear-gradient(to right, #00c9ff, #92fe9d);
+            text-align:center;
+            padding-top:80px;
+        }
+
+        .card{
+            background:white;
+            width:500px;
+            margin:auto;
+            padding:30px;
+            border-radius:15px;
+            box-shadow:0 0 15px gray;
+        }
+
+        h1{
+            color:#1565c0;
+        }
+
+        h2{
+            color:#d32f2f;
+        }
+
+        .confidence{
+            color:#388e3c;
+            font-size:20px;
+        }
+
+        .recommendation{
+            background:#fff3cd;
+            padding:15px;
+            border-radius:10px;
+        }
+
+        a{
+            text-decoration:none;
+            background:#1565c0;
+            color:white;
+            padding:10px 20px;
+            border-radius:8px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h1>🌱 Prediction Result</h1>
+
+    <h2>{{ disease }}</h2>
+
+    <p class="confidence">
+        Confidence: {{ confidence }}
+    </p>
+
+    <div class="recommendation">
+        <strong>Recommendation:</strong><br>
+        {{ recommendation }}
+    </div>
+
+    <br><br>
+
+    <a href="/">Check Another Image</a>
+</div>
+
+</body>
+</html>
